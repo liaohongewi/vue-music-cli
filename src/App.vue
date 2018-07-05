@@ -2,12 +2,14 @@
   <div id="app">
     <header-nav></header-nav>
     <mymusic-nav></mymusic-nav>
+    <bottom-bar></bottom-bar>
   </div>
 </template>
 
 <script>
 import header from "@/components/header/header.vue"
 import mymusic from "@/views/mymusic.vue"
+import bottombar from "@/components/bottombar/bottombar.vue"
 import Vue from 'vue'
 import axios from 'axios'
 import Vueaxios from 'vue-axios'
@@ -23,6 +25,7 @@ export default {
   components:{
     "header-nav":header,
     "mymusic-nav":mymusic,
+    "bottom-bar":bottombar,
   },
   created () {
     let LocalAPI = 'https://www.easy-mock.com/mock/5b3c5dcda27b9a779117e8bb/vue-music-liao/music'
