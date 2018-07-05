@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-@import "_header";
+@import "_header";              //头部样式
 
-@import "_mymusic";
+@import "_mymusic";             //我的音乐  首页样式   
 
-@import "_typelist";
+@import "_typelist";            //类型列表样式
 
-@import "_musicsheet";
+@import "_musicsheet";          //音乐导航栏样式
+
+@import "_bottombar"            //底部播放器样式
