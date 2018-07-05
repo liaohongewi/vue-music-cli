@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix:after {
+  display: block;
+  content: ".";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.3);
+    transform: scaleY(0.3);
+}
+}
+.typelist {
+  height: 50px;
+  background: #f7f7f7;
+  position: relative;
+}
+.typelist:active {
+  background: #d5d5d5;
+}
+.typelist .info {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  color: #c62f2f;
+  left: 15px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.typelist .typelist-detail {
+  height: 100%;
+  line-height: 50px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+.typelist .typelist-detail .name {
+  color: #333;
+  font-size: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.typelist .typelist-detail .count {
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.typelist .typelist-detail .border-1px {
+  position: relative;
+}
+.typelist .typelist-detail .border-1px:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7,17,27,0.1);
+  content: ' ';
+}
+.typelist .isPlaying {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  color: #c62f2f;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.typelist .isPlaying:active {
+  background: #d5d5d5;
+}

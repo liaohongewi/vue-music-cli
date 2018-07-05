@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 10;
+    background: #c62f2f;
+}
+.header .header-warpper {
+  height: 100%;
+  background: #c62f2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header-warpper .icon-menu,
+.header .header-warpper .icon-search {
+  color: #fff;
+  font-size: 26px;
+  padding: 10px 15px;
+}
+.header .header-warpper .centermenu {
+  font-size: 24px;
+}
+.header .header-warpper .centermenu i {
+  margin: 0 5px;
+  color: #eee;
+}
+.header .header-warpper .centermenu i.router-link-active i {
+  color: #ccafaf;
+}
+.header .header-warpper .centermenu i.active {
+  color: #4ae0a8;
+}
+.header .header-warpper .centermenu i.music {
+  font-size: 22px;
+}
+.header .header-warpper .counter {
+  position: absolute;
+  background: #008000;
+  width: 600px;
+  height: 150px;
+  color: #fff;
+  font-size: 20px;
+  top: 0;
+  left: 120px;
+}
+.header .header-warpper .counter p {
+  height: 30px;
+  line-height: 30px;
+}

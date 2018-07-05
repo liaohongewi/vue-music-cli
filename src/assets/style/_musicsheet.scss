@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix:after {
+  display: block;
+  content: ".";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.3);
+    transform: scaleY(0.3);
+}
+}
+.musicsheet {
+  height: auto;
+  width: 100%;
+  background: #f3f3f3;
+}
+.musicsheet .title {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: #e1e1e1;
+  position: relative;
+}
+.musicsheet .title .toggle {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.5s;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+.musicsheet .title .detail {
+  margin-left: 35px;
+  color: #666;
+}
+.musicsheet .title .detail .name {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 12px;
+}
+.musicsheet .title .detail .count {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+}
+.musicsheet .title .detail .setting {
+  font-size: 16px;
+  position: absolute;
+  width: 28px;
+  line-height: 28px;
+  text-align: center;
+  height: 28px;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.musicsheet .content {
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.musicsheet .content:active {
+  background: #d5d5d5;
+}
+.musicsheet .content .sheetimg {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+}
+.musicsheet .content .detail {
+  height: 60px;
+  padding-left: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.musicsheet .content .detail .name,
+.musicsheet .content .detail .count {
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  height: 25px;
+  line-height: 25px;
+}
+.musicsheet .content .detail .name {
+  margin-top: 5px;
+  color: #333;
+  font-size: 14px;
+}
+.musicsheet .content .detail .count {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+}
+.musicsheet .content .detail .border-1px {
+  margin: 0;
+  position: relative;
+}
+.musicsheet .content .detail .border-1px:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7,17,27,0.1);
+  content: ' ';
+}
+.musicsheet .content .detail .setting {
+  position: absolute;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  top: 50%;
+  color: #999;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+.musicsheet .content .detail .setting:active {
+  background: #d5d5d5;
+}
