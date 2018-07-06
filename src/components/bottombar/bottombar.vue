@@ -1,5 +1,5 @@
 <template>
-    <div class="bottom-bar" @click="showMusicDetail">
+    <div class="bottom-bar" >
 		<div class="music-info">
 			<img class="music-pic" :src="musicImage" alt="">
 			<div class="music-detail">
@@ -7,13 +7,14 @@
 				<p class="music-singer" v-if="musicSinger">{{musicSinger}}</p>
 			</div>
 		</div>
-		<div class="playpause" @click.stop="playpause">
+		<div class="playpause">
 			<i :class="iconPlayPause?'icon-pause':'icon-play'"></i>
 		</div>
-		<i class="music-list icon-list-music" @click.stop="showMusicList"></i>
+		<i class="music-list icon-list-music"></i>
 	</div>
 </template>
 <script>
+import store from '@/store.js'
 export default {
     data(){
         return{
