@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.clearfix {
+  display: inline-block;
+}
+.clearfix:after {
+  display: block;
+  content: ".";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+.border-1px::after {
+    -webkit-transform: scaleY(0.3);
+    transform: scaleY(0.3);
+}
+}
+.songlists {
+  padding-bottom: 46px;
+}
+.songlists .songlist {
+  height: 54px;
+  position: relative;
+}
+.songlists .songlist .warpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 54px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  botttom: 0;
+}
+.songlists .songlist .warpper:active {
+  background: #d5d5d5;
+}
+.songlists .songlist .warpper .listIndex {
+  width: 54px;
+  height: 54px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 54px;
+          flex: 0 0 54px;
+  font-size: 0;
+}
+.songlists .songlist .warpper .listIndex .iconIndex {
+  display: inline-block;
+  font-size: 14px;
+  color: #c62f2f;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+}
+.songlists .songlist .warpper .listIndex .index {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #bababa;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+}
+.songlists .songlist .warpper .songInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 54px;
+  max-width: calc(100% - 54px);
+  box-sizing: border-box;
+}
+.songlists .songlist .warpper .songInfo .border-1px {
+  position: relative;
+}
+.songlists .songlist .warpper .songInfo .border-1px:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7,17,27,0.1);
+  content: ' ';
+}
+.songlists .songlist .warpper .songInfo .detail {
+  width: auto;
+  max-width: calc(100% - 54px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.songlists .songlist .warpper .songInfo .detail p {
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.songlists .songlist .warpper .songInfo .detail p.name {
+  font-size: 14px;
+  color: #333;
+  padding: 2px 0;
+  font-weight: 400;
+}
+.songlists .songlist .warpper .songInfo .detail p.singer {
+  font-size: 10px;
+  color: #aaa;
+  padding: 2px 0;
+  font-weight: 400;
+}
+.songlists .songlist .rightSetting {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+.songlists .songlist .rightSetting:active {
+  background: #d5d5d5;
+}
