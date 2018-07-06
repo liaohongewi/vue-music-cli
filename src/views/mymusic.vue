@@ -18,6 +18,7 @@ export default {
 		items () {
 			return this.$store.getters.getMusicAllList.sheets
 		}
+		
 	},
     components:{
         "type-list":typelist,
